@@ -15,7 +15,7 @@ export default function Products() {
       {products &&
         products.map((value) => (
           <div key={value.id} className="Product-items">
-            <img className="Product-img" src={value.image} alt={value.name}/>
+            <img className="Product-img" src={`${PATH}${value.image}`} alt={value.name}/>
             <h3>{value.name}</h3>
             <p style={{textAlign:"justify",padding:"10px"}}>{value.desc}</p>
             <div className="priceBtn">
