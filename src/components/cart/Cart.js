@@ -37,7 +37,7 @@ export default function Cart() {
     setOrder((prev) => ({ ...prev, order }));
     setOrders((prev) => [...prev, order]);
     setCartItems(() => []);
-    navigate("/coffeecart/order");
+    // navigate("/coffeecart/order");
   };
 
   return (
